@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\OneDrive\\Работен плот\\Visual Studio Files\\PrismTasksSolver\\PrismTasksSolver.csproj": {}
+    "C:\\Users\\User\\OneDrive\\Работен плот\\Visual Studio Files\\CalculatorForEveruthing\\CalculatorForEveruthing.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\OneDrive\\Работен плот\\Visual Studio Files\\PrismTasksSolver\\PrismTasksSolver.csproj": {
+    "C:\\Users\\User\\OneDrive\\Работен плот\\Visual Studio Files\\CalculatorForEveruthing\\CalculatorForEveruthing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\OneDrive\\Работен плот\\Visual Studio Files\\PrismTasksSolver\\PrismTasksSolver.csproj",
-        "projectName": "PrismTasksSolver",
-        "projectPath": "C:\\Users\\User\\OneDrive\\Работен плот\\Visual Studio Files\\PrismTasksSolver\\PrismTasksSolver.csproj",
+        "projectUniqueName": "C:\\Users\\User\\OneDrive\\Работен плот\\Visual Studio Files\\CalculatorForEveruthing\\CalculatorForEveruthing.csproj",
+        "projectName": "CalculatorForEveruthing",
+        "projectPath": "C:\\Users\\User\\OneDrive\\Работен плот\\Visual Studio Files\\CalculatorForEveruthing\\CalculatorForEveruthing.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\OneDrive\\Работен плот\\Visual Studio Files\\PrismTasksSolver\\obj\\",
+        "outputPath": "C:\\Users\\User\\OneDrive\\Работен плот\\Visual Studio Files\\CalculatorForEveruthing\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

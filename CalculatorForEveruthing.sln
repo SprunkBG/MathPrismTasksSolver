@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismTasksSolver", "PrismTasksSolver.csproj", "{9A12E766-093C-448F-B081-8D0ED21BD409}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorForEveruthing", "CalculatorForEveruthing.csproj", "{4CC380E5-8A42-4E3B-9A42-862FA2BFE028}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9A12E766-093C-448F-B081-8D0ED21BD409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A12E766-093C-448F-B081-8D0ED21BD409}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9A12E766-093C-448F-B081-8D0ED21BD409}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9A12E766-093C-448F-B081-8D0ED21BD409}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CC380E5-8A42-4E3B-9A42-862FA2BFE028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC380E5-8A42-4E3B-9A42-862FA2BFE028}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC380E5-8A42-4E3B-9A42-862FA2BFE028}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC380E5-8A42-4E3B-9A42-862FA2BFE028}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {273D9FC6-E4C8-4B9E-9C6D-84D84E029781}
+		SolutionGuid = {64A345AF-56E5-4FC0-9F67-E55281C3A657}
 	EndGlobalSection
 EndGlobal

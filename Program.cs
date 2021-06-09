@@ -1,153 +1,110 @@
 ﻿using System;
 
-namespace PrismTasksSolver
+namespace CalculatorForEveruthing
 {
     class Program
     {
 
-        public static void SCalculation()
+        public static void ConsoleColor()
         {
-            Console.WriteLine("Обиколка (P): ");
-            double P = Double.Parse(Console.ReadLine());
-            Console.WriteLine("Височина (h): ");
-            double h = Double.Parse(Console.ReadLine());
 
-            OkolnaPovurhninaTriugulna.CalculateS(P, h);
-        }
-        
-        public static void HCalculation()
-        {
-            Console.WriteLine("Обем (V): ");
-            double V = Double.Parse(Console.ReadLine());
-            Console.WriteLine("Лице на призмата (B): ");
-            double B = Double.Parse(Console.ReadLine());
+            Console.WriteLine("Choose color for the text (type the number): \n1) green \n2) red \n3) blue \n4) yellow \n5) white \n6) gray \n7) default");
+            short color = Int16.Parse(Console.ReadLine());
 
-            OkolnaPovurhninaTriugulna.CalculateH(V, B);
-        }
-
-        public static void BCalculation()
-        {
-            Console.WriteLine("Страна а: ");
-            double a = Double.Parse(Console.ReadLine());
-
-            PulnaPovurhnina.CalculateB(a);
-        }
-
-        public static void SearchedParameterForTriugulnaOkolnaPovurhnina(byte parameterNumber)
-        {
-            if (parameterNumber == 1)
+            if (color == 1)
             {
-                SCalculation();
+                Console.ForegroundColor = System.ConsoleColor.Green;
             }
-            else if (parameterNumber == 2)
+            else if (color == 2)
             {
-                Console.WriteLine("Страна а: ");
-                double a = Double.Parse(Console.ReadLine());
-
-                OkolnaPovurhninaTriugulna.CalculateP(a);
+                Console.ForegroundColor = System.ConsoleColor.Red;
             }
-            else if (parameterNumber == 3)
+            else if (color == 3)
             {
-                BCalculation();
+                Console.ForegroundColor = System.ConsoleColor.Blue;
             }
-        }
-
-        public static void SearchedParameterForTriugulnaPulnaPovurhnina(byte parameterNumber)
-        {
-            if (parameterNumber == 1)
+            else if (color == 4)
             {
-                Console.WriteLine("Околна повърхнина (S): ");
-                double S = Byte.Parse(Console.ReadLine());
-                Console.WriteLine("Лице на призмата (B): ");
-                double B = Byte.Parse(Console.ReadLine());
-
-                PulnaPovurhnina.CalculateS1(S, B);
+                Console.ForegroundColor = System.ConsoleColor.Yellow;
             }
-            else if (parameterNumber == 2)
+            else if (color == 5)
             {
-                SCalculation();
+                Console.ForegroundColor = System.ConsoleColor.White;
             }
-            else if (parameterNumber == 3)
+            else if (color == 6)
             {
-                BCalculation();
+                Console.ForegroundColor = System.ConsoleColor.Gray;
             }
-        }
-
-        public static void SearchedParameterForTriugulnaPrismaObem(byte parameterNumeber)
-        {
-            if (parameterNumeber == 1)
+            else if (color == 7)
             {
-                Console.WriteLine("Лице на призмата (B): ");
-                double B = Double.Parse(Console.ReadLine());
-                Console.WriteLine("Височина (h): ");
-                double h = Double.Parse(Console.ReadLine());
-
-                Obem.CalculateV(B, h);
+                Console.Write("");
             }
-            else if (parameterNumeber == 2)
-            {
-                BCalculation();
-            }
-            else if (parameterNumeber == 3)
-            {
-                HCalculation();
-            }
-        }
-
-        //TODO Insert Methods For Calculations
-        public static void TrianglePrismTaskChoose(byte taskNumber)
-        {
-            if (taskNumber == 1)
-            {
-
-            }
-            else if (taskNumber == 2)
-            {
-
-            }
-            else if (taskNumber == 3)
-            {
-
-            }
-        }
-
-        //TODO Create 3 Classes For Square Prism Tasks
-        //TODO Create Methods For Calculations
-        //TODO Insert Methods For Calculations
-        public static void SquarePrismTaskChoose(byte taskNumber)
-        {
-            if (taskNumber == 1)
-            {
-
-            }
-            else if (taskNumber == 2)
-            {
-
-            }
-            else if (taskNumber == 3)
-            {
-
-            }
-        }
-
-        public static void PrismType(byte prismType)
-        {
-            if (prismType == 1)
-            {
-                TrianglePrismTaskChoose(prismType);
-            }
-            else if (prismType == 2)
-            {
-                SquarePrismTaskChoose(prismType);
-            }
-        }
-
-        public static void Main(string[] args)
-        {
-            
-
 
         }
 
+        public static void DateAndTime()
+        {
+            DateTime date = DateTime.Now;
+            Console.WriteLine($"The time now is: {date.ToString()}");
+        }
+
+        public static void FromDecimalToBinary()
+        {
+            Console.WriteLine("How much numbers you want to convert form decimal to binary?");
+            int n = Int32.Parse(Console.ReadLine());
+
+            uint num = 0;
+
+            for (int i = 0; i < n; i++)
+            {
+                num = UInt32.Parse(Console.ReadLine());
+
+                ToBinary numbers = new ToBinary(num);
+
+                Console.WriteLine($"The binary code of {num} is: {numbers}");
+            }
+        }
+
+        public static void SqareRootCalculation()
+        {
+            Console.WriteLine("Number you want to calculate the square root: ");
+
+            double number = Double.Parse(Console.ReadLine());
+
+            SquareRoot r = new SquareRoot(number);
+            Console.WriteLine(r);
+        }
+
+        public static void SquareEquation()
+        {
+            //double a = Double.Parse(Console.ReadLine());
+            //double b = Double.Parse(Console.ReadLine());
+            //double c = Double.Parse(Console.ReadLine());
+
+            //SqareEquation se = new SqareEquation(a, b, c);
+        }
+
+        static void Main(string[] args)
+        {
+
+            DateAndTime();
+
+            Console.WriteLine();
+
+            ConsoleColor();
+
+            FromDecimalToBinary();
+
+            Console.WriteLine();
+
+            SqareRootCalculation();
+
+            Console.WriteLine();
+
+            SquareEquation();
+
+            Console.ReadKey();
+
+        }
     }
 }
